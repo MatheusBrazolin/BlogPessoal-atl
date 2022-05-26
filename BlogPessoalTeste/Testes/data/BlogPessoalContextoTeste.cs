@@ -24,8 +24,8 @@ namespace BlogPessoalTeste.Testes.data
 
             await _contexto.Usuarios.AddAsync(new Usuario
             {
-                Nome = "Karol Boaz",
-                Email = "karol@email.com",
+                Nome = "Matheus Breazolin ",
+                Email = "Matheus@email.com",
                 Senha = "134652",
                 Foto = "AKITAOLINKDAFOTO",
                 Tipo = TipoUsuario.NORMAL
@@ -33,7 +33,7 @@ namespace BlogPessoalTeste.Testes.data
 
             await _contexto.SaveChangesAsync();
 
-            Assert.IsNotNull(await _contexto.Usuarios.FirstOrDefaultAsync(u => u.Email == "karol@email.com"));
+            Assert.IsNotNull(await _contexto.Usuarios.FirstOrDefaultAsync(u => u.Email == "Matheus@email.com"));
         }
     }
 }
